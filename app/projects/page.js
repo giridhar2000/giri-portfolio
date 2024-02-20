@@ -10,12 +10,12 @@ const Projects = () => {
     },
     {
       projectName: 'Block chain for Imapact',
-      techStack: 'MERN | MEAN | Next.js',
+      techStack: 'MERN',
       link: 'https://bfi-iota.vercel.app/'
     },
     {
       projectName: 'Blog website',
-      techStack: 'MERN',
+      techStack: 'MERN | MEAN | Next.js',
       link: 'https://memoir-alpha.vercel.app/'
     },
     {

@@ -165,13 +165,6 @@ const About = () => {
           BE - CSE - 82.4%
         </span><br /><br />
 
-        <span className='font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]'>
-          HSC
-        </span><br />
-        <span className='text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)] max-sm:text-[clamp(1rem,5vmin,5rem)]'>
-          Bio - Maths - 78%
-        </span><br /><br />
-
       </div>
     </>
   )
