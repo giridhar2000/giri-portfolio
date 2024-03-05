@@ -6,12 +6,12 @@ const Projects = () => {
     {
       projectName: 'Vendor Contacts',
       techStack: 'ReactJS Supabase',
-      link: 'https://vendorcontacts.io/'
+      link: 'https://vendorcontacts.vercel.app/'
     },
     {
       projectName: 'Block chain for Imapact',
       techStack: 'MERN',
-      link: 'https://bfi-iota.vercel.app/'
+      link: 'https://bfi-rho.vercel.app/'
     },
     {
       projectName: 'Blog website',
@@ -21,7 +21,7 @@ const Projects = () => {
     {
       projectName: 'Transparency Portal UI',
       techStack: 'ReactJS',
-      link: '/'
+      link: '/trasparencyui'
     },
     {
       projectName: 'House of Models',
