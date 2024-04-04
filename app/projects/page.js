@@ -14,6 +14,21 @@ const Projects = () => {
       link: 'https://bfi-rho.vercel.app/'
     },
     {
+      projectName: 'DNS Manager',
+      techStack: 'ReactJS AWS',
+      link: 'https://dns-manager-one.vercel.app/'
+    },
+    {
+      projectName: 'ClearHire',
+      techStack: 'ReactJS Supabase',
+      link: 'https://clearhire.app/'
+    },
+    {
+      projectName: 'Teambo',
+      techStack: 'ReactJS Firebase',
+      link: 'https://teambo.app/'
+    },
+    {
       projectName: 'Blog website',
       techStack: 'MERN | MEAN | Next.js',
       link: 'https://memoir-alpha.vercel.app/'
@@ -32,7 +47,9 @@ const Projects = () => {
       projectName: 'Endless Design',
       techStack: 'ReactJS',
       link: 'https://endless-design.vercel.app/'
-    }
+    },
+
+
   ]
   return (
     <div className='text-white mx-auto my-5 px-2 w-3/4'>

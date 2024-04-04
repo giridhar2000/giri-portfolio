@@ -20,7 +20,7 @@ const Navbar = () => {
             <span className='text-slate-900 font-bold text-xl w-3.4'>
                 <Link href={'/'}>Giridhar</Link>
             </span>
-            <div className='flex justify-between items-center font-bold gap-5  max-sm:hidden'>
+            <div className='flex justify-between items-center font-bold gap-5 max-sm:hidden'>
                 <div className='flex justify-between w-4/6 items-center'>
                     <span className='cursor-pointer relative p-2 rounded-lg hover:bg-yellow-300'>
                         {pathname === '/about' &&
