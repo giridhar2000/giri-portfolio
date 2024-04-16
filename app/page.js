@@ -1,71 +1,51 @@
-'use client'
-
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import Shapes from "@/components/Shapes";
+"use client";
+import { motion } from "framer-motion";
+import { LampContainer } from "@/components/Lamp";
+import About from "./about/About";
+import Projects from "./projects/Projects";
 
 export default function Home() {
-  const component = useRef();
-  const renderLetters = (name) => {
-    if (!name) return;
-    return name.split("").map((val, index) => {
-      return (
-        <span
-          className={`names-animation names-animation-${index} inline-block opacity-0`}
-          key={index}>
-          {val}
-        </span>
-      )
-    })
-  }
-
-  useEffect(() => {
-    let cts = gsap.context(() => {
-      const tl = gsap.timeline();
-      tl.fromTo(".names-animation", {
-        x: -100,
-        opacity: 0,
-        rotate: -10
-      }, {
-        x: 0,
-        opacity: 1,
-        rotate: 0,
-        ease: 'elastic.out(1,0.3)',
-        duration: 1,
-        transformOrigin: "left top",
-        delay: 0.5,
-        stagger: {
-          each: 0.1,
-          from: "random"
-        }
-      })
-
-      tl.fromTo(".job-title", {
-        y: 20,
-        opacity: 0,
-        scale: 1.2
-      }, {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        ease: 'elastic.out(1,0.3)',
-      })
-    }, component)
-    return () => cts.revert();
-  }, [])
-
   return (
-    <section ref={component} className="px-3 py-10 mx-auto my-0 md:px-6 md:py-8 lg:py-10">
-      <div className="flex min-h-[70vh] items-center justify-evenly max-sm:flex-col-reverse max-sm:justify-end">
-        <div className="col-start-1 md:row-start-1 pt-10 max-w-7x1">
-          <h1 className="mb-8 text-[clamp(3rem,12vmin,12rem)] font-extrabold leading-none tracking-tighter">
-            <span className="block text-slate-300">{renderLetters("GIRIDHAR")}</span>
-          </h1>
-          <span className="job-title block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 
-          bg-clip-text font-bold uppercase tracking-[.2rem] text-2xl text-transparent opacity-0 md:text-4xl">WEB-APP DEVELOPER</span>
-        </div> 
-          <Shapes />
+    <div>
+      <div>
+        <LampContainer>
+          <motion.div
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: -30 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          >
+            <h1 className="mb-2 font-bold text-slate-300">Giridhar</h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: -30 }}
+            transition={{
+              delay: 0.6,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="mt-4 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          >
+            <h1
+              className="bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 
+          bg-clip-text "
+            >
+              Full Stack Developer
+            </h1>
+          </motion.div>
+        </LampContainer>
       </div>
-    </section>
+      <div id="Projects">
+        <Projects />
+      </div>
+      <div className="my-[12rem]" id="About">
+        <About />
+      </div>
+    </div>
   );
 }

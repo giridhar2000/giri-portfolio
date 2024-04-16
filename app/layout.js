@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-slate-900 text-white-500">
       <body className={inter.className}>
         <Navbar />  
-        <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
+        <div className="background-gradient absolute inset-0 z-10 max-h-screen" />
         {children}
         <Footer />
       </body>
