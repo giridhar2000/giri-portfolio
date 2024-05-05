@@ -90,37 +90,29 @@ const About = () => {
           <span className="font-extrabold text-[clamp(3rem,12vmin,12rem)] pt-5 text-slate-300">
             About Giri
           </span>
-          <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-20 justify-center">
-              <p className="text-xl mt-8 text-slate-300 text-justify w-[65%]">
-                Hey there! I'm Giri, a dedicated React enthusiast on a mission
-                to elevate digital experiences through innovative coding. With a
-                passion for crafting pixel-perfect interfaces and a knack for
-                problem-solving, I immerse myself in the intricacies of React
-                development to create seamless user interactions. With a love
-                for clean code and elegant design, I thrive on transforming
-                ideas into intuitive interfaces that leave a lasting impact.
-              </p>
-              <div ref={imageRef} className="w-[15%]">
-                <Image src={Design} alt="user-giri" className=" userimg" />
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <TextRevealCard
-                text="You know the business"
-                revealText="I know the chemistry "
-              >
-                {/* <TextRevealCardTitle>
+          <div className="flex items-center flex-col">
+            <TextRevealCard
+              text="You know the business"
+              revealText="I know the chemistry "
+            >
+              {/* <TextRevealCardTitle>
                 Sometimes, you just need to see it.
-              </TextRevealCardTitle>
+              </TextRevealCardTitle> */}
               <TextRevealCardDescription>
-                This is a text reveal card. Hover over the card to reveal the
-                hidden text.
-              </TextRevealCardDescription> */}
-              </TextRevealCard>
-              <div className="w-[50%] flex flex-col justify-center gap-5">
-                <p className="text-xl text-slate-300 text-justify">
+                <span className="text-xl mt-8 text-slate-300 text-justify">
+                  Hey there! I'm Giri, a dedicated React enthusiast on a mission
+                  to elevate digital experiences through innovative coding. With
+                  a passion for crafting pixel-perfect interfaces and a knack
+                  for problem-solving, I immerse myself in the intricacies of
+                  React development to create seamless user interactions. With a
+                  love for clean code and elegant design, I thrive on
+                  transforming ideas into intuitive interfaces that leave a
+                  lasting impact.
+                </span>
+              </TextRevealCardDescription>
+              <br />
+              <TextRevealCardDescription>
+                <span className="text-xl text-slate-300 text-justify">
                   Driven by a curiosity to explore new horizons, I'm committed
                   to pushing the boundaries of what's possible in the
                   ever-evolving world of web development. When I'm not coding,
@@ -130,66 +122,68 @@ const About = () => {
                     Join me as I continue to push the boundaries of what's
                     possible in the digital world!
                   </span>
-                </p>
-                <div className="flex gap-5">
-                  <Link
-                    href={"/resume.pdf"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    locale={false}
-                  >
-                    <button className="group relative flex w-fit text-slate-800 items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105">
-                      <span className="absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0"></span>
-                      <span className="z-50 flex items-center gap-1">
-                        Resume
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          strokeWidth="0"
-                          viewBox="0 0 24 24"
-                          className="inline-block"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                  <Link
-                    href={"https://www.linkedin.com/in/giridhar-b-1792a6189"}
-                    target="_blank"
-                  >
-                    <button className="group relative flex w-fit text-slate-800 items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105 ml-3 z-50">
-                      <span className="absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0"></span>
-                      <span className="z-50 flex items-center gap-1">
-                        Contact
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          strokeWidth="0"
-                          viewBox="0 0 24 24"
-                          className="inline-block"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
+                </span>
+              </TextRevealCardDescription>
+            </TextRevealCard>
+
+            <div className="flex gap-5 mt-10">
+              <Link
+                href={"/resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                locale={false}
+              >
+                <button className="group relative flex w-fit text-slate-800 items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105">
+                  <span className="absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0"></span>
+                  <span className="z-50 flex items-center gap-1">
+                    Resume
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 24 24"
+                      className="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/in/giridhar-b-1792a6189"}
+                target="_blank"
+              >
+                <button className="group relative flex w-fit text-slate-800 items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105 ml-3 z-50">
+                  <span className="absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0"></span>
+                  <span className="z-50 flex items-center gap-1">
+                    Contact
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 24 24"
+                      className="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
       <div className="text-white">
-        <div className="mx-auto mt-[12rem] mb-10 px-2 w-3/4 max-sm:mt-10">
+        <div className="mx-auto mt-[12rem] mb-10 w-3/4 ">
           <span className="font-extrabold text-[clamp(3rem,12vmin,12rem)] px-2 w-3/4 pt-5 text-slate-300">
             What I use
           </span>

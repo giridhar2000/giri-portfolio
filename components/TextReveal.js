@@ -62,7 +62,7 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-transparent border border-white/[0.08] w-[40rem] rounded-lg p-8 relative overflow-hidden mx-auto my-0",
+        "bg-transparent border border-white/[0.08] rounded-lg p-8 relative overflow-hidden mx-auto my-0",
         className
       )}
     >

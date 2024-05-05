@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Tiles = (props) => {
     return (
-        <div className="flex items-center border-solid border-2 border-gray-600 rounded-lg px-5 py-5 mx-auto my-10 w-full justify-between hover:scale-110 cursor-pointer transition-all">
+        <div className="flex items-center border-solid border-2 border-gray-600 rounded-lg px-5 py-5 mx-auto my-10 w-full justify-between hover:scale-110 transition-all">
             <div className="flex flex-col">
                 <h2 className="font-bold text-xl">{props.projectName}</h2>
                 <h3 className="text-slate-500 font-bold">{props.techStack}</h3>
