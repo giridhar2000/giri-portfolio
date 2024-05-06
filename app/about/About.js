@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
-import Design from "../../public/Design.svg";
+
 import { MdCircle } from "react-icons/md";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,7 +8,6 @@ import Link from "next/link";
 import {
   TextRevealCard,
   TextRevealCardDescription,
-  TextRevealCardTitle,
 } from "@/components/TextReveal";
 
 gsap.registerPlugin(ScrollTrigger);
