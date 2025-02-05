@@ -13,7 +13,7 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const items = ["REACT", "NEXT.JS", "NODE.JS", "MONGODB"];
+  const items = ["REACT NATIVE", "REACT", "NEXT.JS", "NODE.JS", "MONGODB"];
   const component = useRef();
   const imageRef = useRef();
 
@@ -194,6 +194,7 @@ const About = () => {
             >
               {Array.from({ length: 15 }, (_, index) => {
                 var color = "rgb(255,255,255)";
+                if (val === "REACT NATIVE") color = "rgb(41, 216, 255)";
                 if (val === "REACT") color = "rgb(41, 216, 255)";
                 if (val === "MONGODB") color = "rgb(10, 228, 72)";
                 if (val === "NODE.JS") color = "rgb(255, 126, 51)";
@@ -226,24 +227,35 @@ const About = () => {
         </span>
         <br />
         <br />
-        <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
-          Jr. Software Engineer - Cognizant
-        </span>
-        <br />
-        <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)]  max-sm:text-[clamp(1rem,5vmin,5rem)]">
-          2022 - present
-        </span>
-        <br />
-        <br />
-        <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
-          Android App Development - UG/BE CSE
-        </span>
-        <br />
-        <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)] max-sm:text-[clamp(1rem,5vmin,5rem)]">
-          2022
-        </span>
-        <br />
-        <br />
+        <div className="ml-4">
+          <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
+            Product Developer - Rescript Welltech
+          </span>
+          <br />
+          <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)]  max-sm:text-[clamp(1rem,5vmin,5rem)]">
+            2024 - present
+          </span>
+          <br />
+          <br />
+          <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
+            Jr. Software Engineer - Cognizant
+          </span>
+          <br />
+          <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)]  max-sm:text-[clamp(1rem,5vmin,5rem)]">
+            2022 - 2024
+          </span>
+          <br />
+          <br />
+          <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
+            Android App Development - UG/BE CSE
+          </span>
+          <br />
+          <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)] max-sm:text-[clamp(1rem,5vmin,5rem)]">
+            2022
+          </span>
+          <br />
+          <br />
+        </div>
       </div>
 
       <div className="mx-auto my-5 px-2 w-3/4">
@@ -252,15 +264,17 @@ const About = () => {
         </span>
         <br />
         <br />
-        <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
-          Undergraduate
-        </span>
-        <br />
-        <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)] max-sm:text-[clamp(1rem,5vmin,5rem)]">
-          BE - CSE - 82.4%
-        </span>
-        <br />
-        <br />
+        <div className="ml-4">
+          <span className="font-extrabold text-[clamp(2rem,5vmin,5rem)] pt-5 text-slate-300 max-sm:text-[clamp(2rem,5vmin,5rem)]">
+            Undergraduate
+          </span>
+          <br />
+          <span className="text-slate-500 font-bold text-[clamp(2rem,3vmin,3rem)] max-sm:text-[clamp(1rem,5vmin,5rem)]">
+            BE - CSE - 82.4%
+          </span>
+          <br />
+          <br />
+        </div>
       </div>
     </>
   );
